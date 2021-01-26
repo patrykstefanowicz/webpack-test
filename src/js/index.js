@@ -1,6 +1,7 @@
 import "../scss/main.scss";
 import moment from "moment";
 import "../js/hamburger.js";
+import "../js/color.js";
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
@@ -149,3 +150,5 @@ console.log(startDay);
 
 const timer = document.querySelector(".time--js");
 timer.innerHTML = startDay;
+
+
