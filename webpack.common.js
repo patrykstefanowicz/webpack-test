@@ -94,5 +94,17 @@ module.exports = {
       chunks: ["index"],
       filename: "patryk.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/html.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "html.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/css.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "css.html",
+    }),
   ],
 };

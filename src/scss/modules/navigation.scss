@@ -1,0 +1,29 @@
+.navigation {
+    width: 100%;
+    display: none;
+    @media (min-width: 768px) {
+      padding: 20px 30px;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      text-decoration: none;
+    }
+  
+    &--open {
+      display: block;
+    }
+    &__link {
+      color: rgb(31, 30, 30);
+      margin: 0 60px 16px 2px;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.2);
+        border: 2px solid rgb(41, 40, 40);
+      }
+      &--homepage {
+        color: yellow;
+      }
+    }
+  }

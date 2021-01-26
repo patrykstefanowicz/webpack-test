@@ -1,153 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>WTP: Co ten Patryk</title>
+    
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+
+  <body class="body">
+    <header class="header">
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >HOME</a
+        >
+        <a class="navigation__link" href="html.html">HTML</a>
+        <a class="navigation__link" href="css.html">CSS</a>
+      </nav>
+      <button class="hamburger hamburger--js">Menu</button>
+    </header>
+
+    <main class="main">
+      <header class="main__header" id="top">
+        
+        <p>Właśnie mamy <span class="time--js"></span></p>
+        <button class="action--js">Kliknij</button>
+      </header>
+
+      <section class="about">
+        <h2 class="about__heading about__heading--js">Kim jestem?</h2>
+        <div class="about__grid">
+          <img
+            class="about__picture"
+            src="../assets/img/patryk-header.jpg"
+            alt="Oto ja Patryk"
+          />
+
+          <p class="about__description">
+            Cześć, pracuję w firmie Malow, produkujemy szafy metalowe,
+            stanowisko
+            <b>technolog-programista</b>. Moja praca polega na tworzeniu
+            programów na różnego rodzaju szaf, ale nie tylko… <br />
+            również pisze programy na roboty typu FANUC, KUKA, HYUNDAI. <br />
+            Poza pracą, zajmuję się <i>fotografią</i> (uwielbiam robić zdjęcia)
+            oraz nauką szkolenia
+            <a class="about__link" href="https://cotenfrontend.pl/"
+              >WTF: Co ten frontend 2020</a
+            >
+            <a class="about__link" href="#notatki">Przejdź do notatek</a>
+          </p>
+          <p class="about__description about__description--js"></p>
+        </div>
+      </section>
+
+      <section class="notes" id="notatki">
+        <h2 class="notes__heading notes__heading--js">
+          Notatki z WTF: Co ten Frontend
+        </h2>
+        <div class="grid">
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień I</h3>
+            <p class="week-summary__description">
+              1.Czym jest frontend? 2.Różnice w pracy na systemach Windows /
+              Linux / MacOS 3.Przedstawienie narzędzi 4.Ścieżka rozwoju 5.Mój
+              pierwszy projekt
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień II</h3>
+            <p class="week-summary__description">
+              1.Warstwy strony internetowej 2.HTML 3.CSS 4.Magia programowania
+              5.Devtools
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień III</h3>
+            <p class="week-summary__description">
+              1.Kanban 2.Atrybuty w HTML 3.Klasy CSS 4.Jak działa internet i
+              przeglądarka 5.JavaScript 6.Terminal
+            </p>
+          </article>
+
+          <article class="week-summary week-summary--special">
+            <h3 class="week-summary__title">Tydzień IV</h3>
+            <p class="week-summary__description">
+              1.GIT 2.GITHub 3.CSS: display,wymiary,overflow,jednostki,box
+              model(padding/border/margin),box-sizing,position,z-index,float,
+              4.JavaScript: typy danych i immutabillity(let/const/var),
+              5.Formatowanie kodu i lokalny server, 6.BEM-Block Element
+              Modifier, 7.DOM-Document Object Model
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień V</h3>
+            <p class="week-summary__description">
+              1.Klan 2.JavaScript:funkcje, obiekty, immutability 3.U mnie (nie)
+              działa 4.HTML: listy, tabele, definicje, 5.Normalizacja vs reset,
+              6.Flexbox, 7.Tło 8.Grafik cięcie: wizytówka
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień VI</h3>
+            <p class="week-summary__description">
+              1.HTML: formularz, 2.GET i POST, 3.CSS Grid oraz Media Queries,
+              4.JS: Eventy, 5.Hamburger MENU, 6.GitHub pages: hosting
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień VII</h3>
+            <p class="week-summary__description">
+              1.LIVE flexbox vs grid 2.NODEJS & NPM 3.Skrypty NPM 4.SASS -
+              korzystamy z preprocesora CSS 5.JavaScript:
+              obiekty/prototypy/klasy
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzień VIII</h3>
+            <p class="week-summary__description">
+              1.JavaScript import/export 2.WEBPACK 3.CSS:zmienne 4.HTML: hiperdivoza i inne choroby kodu
+            </p>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Tydzien IX</h3>
+            <p class="week-summary__description">
+              1.Code review 2.CSS:prexify 3.Markdown 4.Czy frontendowiec musi być grafikiem? 5.Git:branche 6.JavaScript: cookies,local i session storage
+            </p>
+          </article>
+        </div>
+
+        <table class="table">
+          <caption>
+            Opis tabeli
+          </caption>
+          <thead>
+            <tr>
+              <th>Lp</th>
+              <th>tytuł</th>
+              <th>czas trwania</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Notatki</td>
+              <td>06:30</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia hic deleniti consectetur debitis aliquid minus non
+                dolore repellendus eveniet, quidem sint. Ex iste sed obcaecati?
+                Necessitatibus facilis corporis exercitationem beatae?
+              </td>
+              <td>03:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Strona domowa Patryka Stefanowicza, wszystko tworzone jest pod program
+      szkoleniowy. <a class="footer__link" href="#top">Wróć na górę strony</a>
+    </footer>
+
   </body>
 </html>

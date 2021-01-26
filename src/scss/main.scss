@@ -1,13 +1,127 @@
 @import "~normalize.css";
-
 @import "_variables";
 @import "modules/hello.scss";
+@import "modules/week-summary.scss";
+@import "modules/navigation.scss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap');
+
+:root{
+  color: white;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.about {
+  &__heading {
+    font-weight: 100;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 17px;
+  }
+  &__description--js {
+    margin-top: 16px;
+  }
+  &__link {
+    text-decoration: none;
+    color: yellow;
+  }
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+  &__grid {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+  }
+}
 
 body {
-  background: $wtf;
-  color: #fff;
+  
+background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(38,65,94,1) 0%);
+ 
+  font-family: 'Barlow', sans-serif;
+}
+
+.footer {
+  font-weight: 700;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  color: white;
+  max-width: 1000px;
+  margin: 3rem auto 1rem;
+  &__link {
+    color: yellow;
+    text-decoration: none;
+  }
+}
+
+.main {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 30px auto 0;
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
+
+.notes {
+  margin-top: 30px;
+  &__heading{
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 60px;
+  background: rgba(255,255,255,0.4);
+}
+
+
+
+.hamburger {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+  .table {
+    
+    margin: 2rem 1rem 2rem;
+  }
+
+
+.grid {
+  display: block;
+  @media (min-width: 768px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  }
 }

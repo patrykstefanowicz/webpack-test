@@ -1,0 +1,33 @@
+.week-summary {
+    padding: 10px;
+    border: 2px solid rgb(163, 153, 10);
+    margin-bottom: 15px;
+    &--special {
+      border: 5px solid rgb(183, 223, 7);
+    }
+    &__title {
+      
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: yellow;
+      }
+    }
+    &__link{
+      text-decoration: none;
+      color: yellow;
+    }
+    &__description {
+      
+      &::after {
+        content: "Hello";
+        width: 10px;
+        height: 10px;
+        background: yellow;
+        color: black;
+      }
+    }
+  }
