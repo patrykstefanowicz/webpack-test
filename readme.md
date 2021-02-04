@@ -1,14 +1,17 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# Homepage 
 
-Simple toolkit for your static websites development.
+Jest to moja strona domowa do szkolenia, na której cały czas zostają wprowadzane zmiany z każdym dniem tygodnia...
 
-## How to use it?
+## Co znajduje się na stronie ? 
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+Podstawy frontendu z najaktualniejszych materiałów. Umieszczone zostały **13 dni tygodnia**, gdzie tydzień po tygodniu zagłębiałem swoja wiedzę. Znajdują się tam przydatne **linki** , **materiały**.
 
-## Available scripts
+
+## Jak zainstalować Webpack starter kit ?
+
+`npm install` - install webpack
 
 `npm run start` - runs development mode
 
