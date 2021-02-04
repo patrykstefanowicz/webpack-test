@@ -8,7 +8,9 @@
 :root{
   color: white;
   text-decoration: none;
-  --background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(38,65,94,1) 0%);
+  line-height: 1.5rem;
+  --background: url(../assets/img/background.jpg);
+  
 }
 
 html {
@@ -50,7 +52,8 @@ html {
 }
 
 body {
-  background: var(--background);
+  background-image: var(--background);
+  background-attachment: fixed;
   font-family: 'Barlow', sans-serif;
 }
 

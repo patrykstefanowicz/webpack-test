@@ -2,6 +2,11 @@
     padding: 10px;
     border: 2px solid rgb(163, 153, 10);
     margin-bottom: 15px;
+
+    &__paragraph{
+      margin: 5px 0 5px 0;
+    }
+
     &--special {
       border: 5px solid rgb(183, 223, 7);
     }
