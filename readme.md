@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](/gh/homepage.png)
 
 # Homepage 
 
