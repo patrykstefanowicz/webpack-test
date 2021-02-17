@@ -2,6 +2,7 @@ import "../scss/main.scss";
 import moment from "moment";
 import "../js/hamburger.js";
 import "../js/color.js";
+import "../js/save.js";
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
@@ -31,7 +32,7 @@ function createContent(querySelectorContent, content) {
   const element = document.querySelector(querySelectorContent);
   element.innerHTML = content;
 }
-createContent(".notes__heading--js", "Siema siema, tutaj dni tygodnia");
+createContent(".notes__heading--js", "Dni tygodnia");
 
 createContent(".about__description--js", "dopisane za pomocą JavaScriptu");
 
@@ -150,5 +151,22 @@ console.log(startDay);
 
 const timer = document.querySelector(".time--js");
 timer.innerHTML = startDay;
+
+localStorage.setItem('human','Patryk');
+console.log(localStorage.getItem('human'));
+
+
+localStorage.setItem('nowyKlucz', JSON.stringify({name: 'Patryk'}));
+console.log({name: 'Patryk'});
+console.log(localStorage.getItem('nowyKlucz'));
+
+const result = localStorage.getItem('nowyKlucz');
+const newObject = JSON.parse(result);
+console.log(JSON.parse(result));
+newObject.newProperty = 'hello';
+console.log(newObject);
+
+
+
 
 

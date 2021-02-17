@@ -5,11 +5,30 @@
 @import "modules/navigation.scss";
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&display=swap');
 
+
+@keyframes move_ball {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+.ball{
+  margin: 15px 0 0 0 ;
+  animation: move_ball 6s linear 0s infinite alternate ;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(204, 175, 14);
+}
+
 :root{
   color: white;
   text-decoration: none;
   line-height: 1.5rem;
-  --background: url(../assets/img/background.jpg);
+  --background: radial-gradient(circle, rgba(247,242,244,1) 0%, rgba(38,65,94,1) 0%);
   
 }
 
@@ -42,6 +61,7 @@ html {
   &__picture {
     display: block;
     max-width: 100%;
+    border-radius: 50%;
   }
   &__grid {
     @media (min-width: 768px) {
@@ -51,8 +71,10 @@ html {
   }
 }
 
+
+
 body {
-  background-image: var(--background);
+  background: var(--background);
   background-attachment: fixed;
   font-family: 'Barlow', sans-serif;
 }
@@ -62,6 +84,7 @@ body {
   right: 20px;
   margin-top: 40px;
 }
+
 
 
 .footer {
@@ -85,6 +108,7 @@ body {
   &__picture {
     display: block;
     max-width: 100%;
+    border-radius: 5%;
   }
   &__header {
     display: flex;
@@ -121,7 +145,6 @@ body {
   }
 }
   .table {
-    
     margin: 2rem 1rem 2rem;
   }
 
