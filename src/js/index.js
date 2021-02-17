@@ -4,8 +4,8 @@ import "../js/hamburger.js";
 import "../js/color.js";
 import "../js/save.js";
 // uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
+import {registerSW} from './pwa.js';
+registerSW();
 
 /* place your code below */
 
