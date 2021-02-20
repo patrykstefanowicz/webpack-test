@@ -157,3 +157,12 @@ body {
   column-gap: 16px;
   }
 }
+
+.repository{
+  &__link{
+    text-decoration: none;
+    color: yellow;
+  }
+  color: #fff;
+  text-decoration: none;
+}

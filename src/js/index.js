@@ -3,6 +3,7 @@ import moment from "moment";
 import "../js/hamburger.js";
 import "../js/color.js";
 import "../js/save.js";
+import "../js/fetch.js";
 // uncomment the lines below to enable PWA
 import {registerSW} from './pwa.js';
 registerSW();
